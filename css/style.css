@@ -1,0 +1,93 @@
+.nav-link:hover{
+    border-bottom: 4px solid rgb(235, 113, 0);
+    transition: none;
+}
+
+
+.hero-img .content{
+    top: 0;
+    width: 800px;
+    padding: 80px 0 80px 150px;
+}
+
+.bg-color{
+    background-color: rgb(243, 239, 239);
+}
+
+.panel-card{
+    background-image: url('../img/panel-careers.webp');
+    background-size: cover;
+    height: 550px;
+    border-radius: 12px;
+}
+
+.panel-card1{
+    background-image: url('../img/panel-life.webp');
+    background-size: contain;
+    height: 550px;
+    border-radius: 12px;
+}
+
+.panel-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 60px;
+}
+  
+.terms-div{
+    font-size: smaller;
+}
+
+.search{
+    border: 2px solid lightgray;
+    box-sizing: border-box;
+    width: 600px;
+    padding: 8px;
+    border-radius: 6px; 
+  }
+  
+  .search:focus {
+    transition: padding 0.3s; 
+    padding: 12px; 
+    outline: none;
+    border: 3px solid rgb(235, 113, 0);
+  }
+  
+  .input {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .input button {
+    margin-left: -90px;
+  }
+  
+  
+@media(max-width: 1182px){
+    .hero-img .content{
+        display:none;
+    }
+
+    .hero-mb{
+        display: block !important;
+    }
+
+    
+}
+
+
+
+@media(max-width: 600px){
+    
+    .hero-lg{
+        display: none;
+    }
+
+    .hero-mb .content{
+        margin: 1px auto !important;
+    }
+}
