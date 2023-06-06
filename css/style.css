@@ -6,8 +6,16 @@
 
 .hero-img .content{
     top: 0;
-    width: 800px;
-    padding: 80px 0 80px 150px;
+    width: 60%;
+    padding: 4% 0 7% 10%;
+}
+
+.hero-img-bg{
+  background-size: cover;
+  width: 1440px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .bg-color{
@@ -23,7 +31,7 @@
 
 .panel-card1{
     background-image: url('../img/panel-life.webp');
-    background-size: contain;
+    background-size: cover;
     height: 550px;
     border-radius: 12px;
 }
@@ -66,28 +74,33 @@
     margin-left: -90px;
   }
   
+  @media (min-width: 1440px) {
+    .hero-img .content {
+      /* position: fixed;
+      top: 0;
+      left: 0;
+      width: 60%;
+      padding: 4% 0 7% 10%;
   
-@media(max-width: 1182px){
+      transform: translate(5%, 5%); */
+      
+      position: fixed;
+      top: 59%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+      width: 40%;
+      padding: 4% 0 7% 10%;
+    }
+  }
+
+  @media(max-width: 724px){
     .hero-img .content{
-        display:none;
+      display: none;
     }
-
-    .hero-mb{
-        display: block !important;
-    }
-
-    
-}
-
-
-
-@media(max-width: 600px){
-    
-    .hero-lg{
-        display: none;
-    }
-
-    .hero-mb .content{
-        margin: 1px auto !important;
-    }
-}
+  }
+  
+  
+  
+  
+  
+  
